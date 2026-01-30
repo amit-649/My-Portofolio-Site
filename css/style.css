@@ -952,10 +952,6 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .techstack-grid {
-        grid-template-columns: 1fr;
-    }
-
     .contact-section {
         grid-template-columns: 1fr;
     }
@@ -1013,6 +1009,49 @@ footer {
 
     .cursor-glow {
         display: none;
+    }
+
+    /* Keep nav brand left aligned on mobile */
+    nav {
+        justify-content: space-between;
+    }
+
+    .nav-brand {
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    /* Hero section mobile fixes */
+    .hero-section {
+        text-align: left;
+    }
+
+    .hero-content {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .status-badges {
+        justify-content: flex-start;
+    }
+
+    .btn-group {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .social-links {
+        justify-content: flex-start;
+    }
+
+    .profile-frame {
+        width: 280px;
+        height: 280px;
+        margin: 0 auto;
+    }
+
+    .tech-items {
+        grid-template-columns: 1fr;
     }
 }
 
