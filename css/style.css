@@ -143,6 +143,25 @@ body:hover .cursor-glow {
     font-size: 0.75rem;
     letter-spacing: 2px;
     text-transform: uppercase;
+    font-weight: bold;
+}
+
+.glitch-logo {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--cyan);
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px var(--cyan);
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    line-height: 1;
+}
+
+.glitch-logo .highlight {
+    color: #fff;
+    text-shadow: 0 0 20px #fff;
 }
 
 .boot-line .success {
@@ -1078,6 +1097,25 @@ footer {
 
     .tech-items {
         grid-template-columns: 1fr;
+    }
+
+    #preloader {
+        padding: 20px;
+        align-items: flex-start;
+    }
+
+    .glitch-logo {
+        font-size: 3rem;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    /* Scale down ASCII art for mobile */
+    .boot-ascii pre {
+        font-size: 3px !important;
+        line-height: 4px !important;
+        white-space: pre;
+        overflow-x: hidden;
     }
 }
 

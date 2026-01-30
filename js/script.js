@@ -2,12 +2,12 @@
 const bootSequence = [
     {
         type: 'ascii', text: `
-╔═══════════════════════════╗
-║     ▄▄▄  ▄▄▄▄▄ ▄▄▄▄▄     ║
-║    █▀▀▀█ █ █ █  ▀█▀      ║
-║    █▀▀▀█ █ █ █   █       ║
-║    ▀   ▀ ▀▀▀▀▀  ▀▀▀ .ML  ║
-╚═══════════════════════════╝` },
+ █████╗ ███╗   ███╗██╗████████╗   ███╗   ███╗██╗     
+██╔══██╗████╗ ████║██║╚══██╔══╝   ████╗ ████║██║     
+███████║██╔████╔██║██║   ██║      ██╔████╔██║██║     
+██╔══██║██║╚██╔╝██║██║   ██║      ██║╚██╔╝██║██║     
+██║  ██║██║ ╚═╝ ██║██║   ██║   ██╗██║ ╚═╝ ██║███████╗
+╚═╝  ╚═╝╚═╝     ╚═╝╚═╝   ╚═╝   ╚═╝╚═╝     ╚═╝╚══════╝` },
     { type: 'info', text: 'AMIT.ML Neural Interface v2.5.0' },
     { type: 'blank' },
     { type: 'ok', text: 'Loading kernel modules...' },
@@ -38,7 +38,10 @@ window.addEventListener('load', () => {
             const div = document.createElement('div');
             div.className = 'boot-line';
 
-            if (item.type === 'ascii') {
+            if (item.type === 'logo') {
+                div.className = 'glitch-logo';
+                div.innerHTML = item.text;
+            } else if (item.type === 'ascii') {
                 div.className = 'boot-ascii';
                 div.innerHTML = `<pre>${item.text}</pre>`;
             } else if (item.type === 'ok') {
