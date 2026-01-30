@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Amit Kumar Garai | Future ML Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Amit Kumar Garai - Aspiring ML Engineer & Python Developer." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amit-649.github.io/">
+    <meta property="og:title" content="Amit Kumar Garai | Future ML Engineer">
+    <meta property="og:description" content="Aspiring Future ML Engineer, Python Developer.">
+    <meta property="og:image" content="https://github.com/amit-649.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg">
+
+    <!-- Preload Critical Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,600;0,800;1,600&family=Fira+Code:wght@400;500&family=Poppins:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HACKER BOOT PRELOADER -->
+    <div id="preloader"></div>
+
+    <!-- NEURAL NETWORK CANVAS -->
+    <canvas id="neuro-canvas"></canvas>
+
+    <div class="wrapper">
+
+        <nav>
+            <div class="nav-brand">
+                <div class="nav-dot"></div> AMIT.ML
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation menu"><i
+                    class="fas fa-bars"></i></button>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- HERO SECTION - TWO COLUMN -->
+        <header id="home" class="hero-section reveal">
+            <div class="hero-content">
+                <!-- Status Badges -->
+                <div class="status-badges">
+                    <span class="status-badge available"><i class="fas fa-circle"></i> Open to Internships</span>
+                    <span class="status-badge"><i class="fas fa-map-marker-alt"></i> Based in India</span>
+                </div>
+
+                <h1 class="hero-title">Hi, I'm <span class="gradient-text">Amit</span></h1>
+                <h2 class="hero-subtitle">Aspiring ML Engineer</h2>
+
+                <p class="hero-description">
+                    I build intelligent systems using Python and Machine Learning.
+                    Currently pursuing BCA and training AI models to solve real-world problems.
+                </p>
+
+                <div class="typing-area">> <span id="typing"></span><span class="cursor"></span></div>
+
+                <div class="btn-group">
+                    <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Hire Me</a>
+                    <a href="resume.pdf" download class="btn"><i class="fas fa-download"></i> Download CV</a>
+                    <a href="https://wa.me/qr/EEASQ2MOEW73P1" target="_blank" class="btn btn-whatsapp"><i
+                            class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+
+                <div class="social-links">
+                    <span>Follow me:</span>
+                    <a href="https://github.com/amit-649" target="_blank" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/amit-garai-10a804267" target="_blank" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/itssz.amit" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.reddit.com/user/Amit154" target="_blank" aria-label="Reddit"><i
+                            class="fab fa-reddit"></i></a>
+                    <a href="mailto:garaiamit64@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <!-- Profile Image with Frame -->
+                <div class="profile-frame tilt-card" data-tilt>
+                    <img src="images/amit-profile.jpg" alt="Amit Kumar Garai" class="profile-image">
+                    <div class="profile-glow"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- STATS SECTION -->
+        <section class="stats-section reveal">
+            <a href="#projects" class="stat-card">
+                <span class="stat-number" data-target="4">0</span>
+                <span class="stat-label">Projects</span>
+            </a>
+            <a href="#techstack" class="stat-card">
+                <span class="stat-number" data-target="8">0</span>
+                <span class="stat-label">Skills</span>
+            </a>
+            <div class="stat-card">
+                <span class="stat-number" data-target="1">0</span>
+                <span class="stat-label">Year Coding</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" data-target="100" data-suffix="%">0</span>
+                <span class="stat-label">Dedication</span>
+            </div>
+        </section>
+
+        <!-- MAIN STACK -->
+        <div class="main-stack">
+
+            <!-- ABOUT SECTION -->
+            <section id="about" class="tilt-card reveal" data-tilt>
+                <h2><i class="fas fa-user-astronaut"></i> About Me</h2>
+                <p class="about-text">
+                    Hi! I'm Amit Kumar Garai, a passionate and curious <strong>ML enthusiast</strong> based in India.
+                    I'm currently a 1st year BCA student, diving deep into the world of <strong>Data Science</strong>
+                    and
+                    <strong>Artificial Intelligence</strong>.
+                </p>
+                <p class="about-text">
+                    Right now, I'm improving my skills in:
+                </p>
+                <ul class="about-list">
+                    <li><span class="hash">#</span> Python and Scikit-Learn for ML</li>
+                    <li><span class="hash">#</span> Pandas & NumPy for data manipulation</li>
+                    <li><span class="hash">#</span> Building personal projects to expand my portfolio</li>
+                </ul>
+
+                <div class="skill-cloud">
+                    <span class="skill-tag">Python 🐍</span>
+                    <span class="skill-tag">Scikit-Learn</span>
+                    <span class="skill-tag">Pandas</span>
+                    <span class="skill-tag">NumPy</span>
+                    <span class="skill-tag">Automation</span>
+                </div>
+            </section>
+
+            <!-- SERVICES / WHAT I DO -->
+            <section id="services" class="services-section reveal">
+                <h2 class="section-title"><i class="fas fa-laptop-code"></i> What I Do</h2>
+                <div class="services-grid">
+                    <div class="service-card tilt-card" data-tilt>
+                        <div class="service-icon"><i class="fas fa-brain"></i></div>
+                        <h3>Machine Learning</h3>
+                        <p>Building predictive models using Scikit-Learn. From classification to regression, I train AI
+                            to solve problems.</p>
+                        <div class="service-tags">
+                            <span>Classification</span>
+                            <span>Regression</span>
+                            <span>Clustering</span>
+                        </div>
+                    </div>
+                    <div class="service-card tilt-card" data-tilt>
+                        <div class="service-icon"><i class="fab fa-python"></i></div>
+                        <h3>Python Development</h3>
+                        <p>Writing clean, efficient Python code for automation, scripting, and data processing tasks.
+                        </p>
+                        <div class="service-tags">
+                            <span>Automation</span>
+                            <span>Scripting</span>
+                            <span>APIs</span>
+                        </div>
+                    </div>
+                    <div class="service-card tilt-card" data-tilt>
+                        <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Data Analysis</h3>
+                        <p>Extracting insights from data using Pandas, NumPy, and visualization libraries.</p>
+                        <div class="service-tags">
+                            <span>Pandas</span>
+                            <span>NumPy</span>
+                            <span>Visualization</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TECH STACK -->
+            <section id="techstack" class="techstack-section reveal">
+                <h2 class="section-title"><i class="fas fa-layer-group"></i> Tech Stack</h2>
+                <div class="techstack-grid">
+                    <!-- Software Development -->
+                    <div class="techstack-category">
+                        <h3><i class="fas fa-terminal"></i> Software Development</h3>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-java"></i>
+                                <span>Java</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-c"></i>
+                                <span>C</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-code"></i>
+                                <span>C++</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Web Development -->
+                    <div class="techstack-category">
+                        <h3><i class="fas fa-globe"></i> Web Development</h3>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROJECTS -->
+            <section id="projects" class="tilt-card reveal" data-tilt>
+                <h2><i class="fas fa-code-branch"></i> Projects</h2>
+                <a href="https://github.com/amit-649/epic-games-auto-claimer" target="_blank" class="project-card">
+                    <h4>Epic Games Auto Claimer <i class="fas fa-external-link-alt"></i></h4>
+                    <small>Python • Playwright • Automation</small>
+                    <p>Automated bot that claims free games from Epic Games Store weekly.</p>
+                </a>
+                <a href="https://github.com/amit-649" target="_blank" class="project-card">
+                    <h4>Iris Classification <i class="fas fa-external-link-alt"></i></h4>
+                    <small>Python • Scikit-Learn</small>
+                    <p>Classic ML model to predict flower species based on petal size.</p>
+                </a>
+                <a href="https://github.com/amit-649" target="_blank" class="project-card">
+                    <h4>MNIST Digit Recognition <i class="fas fa-external-link-alt"></i></h4>
+                    <small>Python • SVM</small>
+                    <p>Computer Vision "Hello World" using Support Vector Machines.</p>
+                </a>
+                <a href="https://github.com/amit-649" target="_blank" class="project-card">
+                    <h4>Spam Detection <i class="fas fa-external-link-alt"></i></h4>
+                    <small>Python • NLP</small>
+                    <p>Filtering junk messages using Natural Language Processing.</p>
+                </a>
+            </section>
+
+            <!-- QUALIFICATIONS -->
+            <section id="qualifications" class="tilt-card reveal" data-tilt>
+                <h2><i class="fas fa-train"></i> Qualifications</h2>
+                <div class="qual-timeline" id="qualTimeline">
+                    <div class="qual-train"><i class="fas fa-train"></i></div>
+                    <div class="qual-item" style="--index: 0;">
+                        <strong>Class 10 (ICSE)</strong>
+                        <p>70%</p>
+                    </div>
+                    <div class="qual-item" style="--index: 1;">
+                        <strong>Class 12 (CBSE)</strong>
+                        <p>66%</p>
+                    </div>
+                    <div class="qual-item current" style="--index: 2;">
+                        <strong>📍 Now - BCA 1st Year</strong>
+                        <p>Currently pursuing</p>
+                    </div>
+                    <div class="qual-item" style="--index: 3;">
+                        <strong>🎯 Long Term Goal</strong>
+                        <p>FAANG ML Engineer</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ANIME -->
+            <section id="anime" class="tilt-card reveal" data-tilt>
+                <h2><i class="fas fa-tv"></i> Anime</h2>
+                <div class="anime-list">
+                    <div class="anime-item" onclick="searchAnime('Steins;Gate')">
+                        <span class="anime-name">Steins;Gate</span>
+                        <span class="anime-tag">Sci-Fi</span>
+                    </div>
+                    <div class="anime-item" onclick="searchAnime('Mushoku Tensei')">
+                        <span class="anime-name">Mushoku Tensei</span>
+                        <span class="anime-tag">Isekai</span>
+                    </div>
+                    <div class="anime-item" onclick="searchAnime('Re:Zero')">
+                        <span class="anime-name">Re:Zero</span>
+                        <span class="anime-tag">Thriller</span>
+                    </div>
+                    <div class="anime-item" onclick="searchAnime('Your Name')">
+                        <span class="anime-name">Your Name</span>
+                        <span class="anime-tag">Movie</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT SECTION -->
+            <section id="contact" class="contact-section reveal">
+                <div class="contact-info">
+                    <h2><i class="fas fa-envelope"></i> Get In Touch</h2>
+                    <p>Let's collaborate! I'm always open to discussing exciting projects and internship opportunities.
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>garaiamit64@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/qr/EEASQ2MOEW73P1" target="_blank"
+                                style="color: var(--muted); text-decoration: none;">WhatsApp</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>India</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-socials">
+                        <a href="https://github.com/amit-649" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/amit-garai-10a804267" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/itssz.amit" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.reddit.com/user/Amit154" target="_blank"><i class="fab fa-reddit"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send
+                        Message</button>
+                </form>
+            </section>
+
+        </div> <!-- End Main Stack -->
+
+        <footer>
+            <p>Built with <span style="color:var(--cyan)">Logic</span> & <span
+                    style="color:var(--accent)">Curiosity</span> by Amit.</p>
+            <div class="footer-links">
+                <a href="https://github.com/amit-649" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/amit-garai-10a804267" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/itssz.amit" target="_blank" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.reddit.com/user/Amit154" target="_blank" aria-label="Reddit"><i
+                        class="fab fa-reddit"></i></a>
+                <a href="mailto:garaiamit64@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- AI CHATBOT WIDGET -->
+    <div class="ai-chat-container">
+        <div class="chat-window" id="chat-window" role="dialog" aria-label="AI Chat Window">
+            <div class="chat-header">
+                <span><i class="fas fa-robot"></i> Digital Amit (AI)</span>
+                <button onclick="toggleChat()" style="background:none; border:none; color:white; cursor:pointer;"
+                    aria-label="Close Chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot">
+                    Hello! I am Amit's AI Digital Twin. Ask me about his skills, projects, or his favorite Anime! 🤖
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="user-input" placeholder="Ask me anything..." onkeypress="handleEnter(event)">
+                <button onclick="sendMessage()" aria-label="Send Message"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+
+        <button class="chat-toggle-btn" onclick="toggleChat()" aria-label="Toggle AI Chatbot">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+    </div>
+
+    <!-- Scroll To Top Button -->
+    <button id="scrollTopBtn" onclick="scrollToTop()" class="scroll-top-btn" title="Go to top"
+        aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/config.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
