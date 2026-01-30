@@ -486,6 +486,18 @@ nav {
     align-items: center;
 }
 
+/* Mobile/Desktop profile visibility */
+.mobile-profile {
+    display: none;
+    margin: 20px 0;
+}
+
+.mobile-profile .profile-frame {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
 /* --- STATS SECTION --- */
 .stats-section {
     display: grid;
@@ -924,12 +936,22 @@ footer {
 /* --- MOBILE RESPONSIVE --- */
 @media (max-width: 992px) {
     .hero-section {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         text-align: center;
     }
 
     .hero-content {
+        order: 1;
         align-items: center;
+    }
+
+    .hero-visual.desktop-profile {
+        display: none;
+    }
+
+    .mobile-profile {
+        display: block;
     }
 
     .hero-description {
@@ -949,6 +971,10 @@ footer {
     }
 
     .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .techstack-grid {
         grid-template-columns: 1fr;
     }
 
