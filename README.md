@@ -2,15 +2,15 @@
 
 ![Portfolio Preview](images/amit-profile.jpg)
 
-Welcome to the source code of my personal portfolio website. This project showcases my journey as an aspiring **ML Engineer** and **Python Developer**.
+Welcome to the source code of my personal portfolio website. This project showcases my journey as an aspiring ML Engineer and Python Developer.
 
 ## 🚀 Live Demo
 Visit the site: [amit-649.github.io/My-Portfolio](https://amit-649.github.io/My-Portfolio/)
 
 ## 🛠️ Tech Stack
-- **Frontend**: HTML5, Vanilla CSS3 (Custom Design), JavaScript (ES6+)
-- **Design**: Responsive Grid, Tilt.js effects, Neural Network Canvas Animation
-- **AI Integration**: Google Gemini API (2.5 Flash) for the "Digital Twin" chatbot.
+- Frontend: HTML5, Vanilla CSS3 (Custom Design), JavaScript (ES6+)
+- Design: Responsive Grid, Tilt.js effects, Neural Network Canvas Animation
+- AI Integration: Google Gemini API (2.5 Flash) for the "Digital Twin" chatbot.
 
 ## 📂 Project Structure
 ```bash
@@ -25,7 +25,7 @@ Portfolio/
 ```
 
 ## 🔧 Setup & Run Locally
-1. **Clone the repository**
+1. Clone the repository
    ```bash
    git clone https://github.com/amit-649/My-Portfolio.git
    cd My-Portfolio
